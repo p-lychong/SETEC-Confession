@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="file" id="imageInput" />
+<button id="sendButton">Send Message</button>
+<script>
+       const token = '7843229922:AAGGqwMiiFsdanSs26o34M0u3LuAznaDZyg';
+       const group_id = '-4537348553';
+       const textMessage = 'this is test msg to test the chatbot';
+
+       document.getElementById('sendButton').addEventListener('click', () => {
+           const imageInput = document.getElementById('imageInput');
+           const file = imageInput.files[0];
+
+           if (!file) {
+               alert('Please select an image file.');
+               return;
+           }
+
+           const url = `https://api.telegram.org/bot${token}/sendPhoto`;
+
+           const formData = new FormData();
+           formData.append('chat_id', chatId);
+           formData.append('caption', textMessage);  // The text message to send with the image
+           formData.append('photo', file);  // The image file
+
+           fetch(url, {
+               method: 'POST',
+               body: formData
+           })
+           .then(response => {
+               if (!response.ok) {
+                   throw new Error('Network response was not ok');
+               }
+               return response.json();
+           })
+           .then(data => {
+               alert('Image and message sent successfully!');
+               imageInput.value = '';  // Clear the file input
+           })
+           .catch(error => {
+               console.error('There was a problem with the fetch operation:', error);
+           });
+       });
+   </script>
+
+</body>
+</html>

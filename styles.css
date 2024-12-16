@@ -1,0 +1,261 @@
+/* body{
+    margin: auto;
+    padding: auto;
+    background-color: rgba(0, 232, 43, 0.291);
+}
+.bg{
+    background: white;
+    width: 80%;
+    height: 100%;
+}
+.background{
+    background-color: rgb(17, 229, 133);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+.background p{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: AKbalthom TNRB;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: underline;
+}
+.profile img{
+    width: 100%;
+    height: 250px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.profile input{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(17, 229, 133);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+.profile button{
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(17, 229, 133);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    color: rgba(54, 54, 54, 0.938);
+}
+.profile p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, 50%) scale(1);
+
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+} */
+body {
+    margin: auto;
+    padding: auto;
+    background-color: rgba(0, 232, 43, 0.291);
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.background {
+    background-color: rgb(17, 229, 133);
+    height: auto;
+    width: auto;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.background p {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: underline;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile input {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    width: 80%;
+    max-width: 500px;
+    height: 50px;
+    background-color: rgb(17, 229, 133);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 20px;
+}
+
+.profile button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(17, 229, 133);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    color: rgba(54, 54, 54, 0.938);
+    cursor: pointer;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.popup {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .background p {
+        font-size: 1.5rem;
+    }
+
+    .profile input,
+    .profile button {
+        width: 90%;
+    }
+
+    .popup {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .background p {
+        font-size: 1.2rem;
+    }
+
+    .profile input {
+        font-size: 0.9rem;
+        height: 40px;
+    }
+
+    .profile button {
+        font-size: 1rem;
+        height: 40px;
+    }
+
+    .popup h2 {
+        font-size: 1.2rem;
+    }
+
+    .popup button {
+        font-size: 0.9rem;
+    }
+}

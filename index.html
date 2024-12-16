@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="google" content="notranslate" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="website Icon" type="png" href="e9sqr8WnkCf.ico">
+    <link rel="website Icon" href="pias.jpg">
+    <title>SETEC-Student Confession</title>
+  </head>
+<body>
+  <center>
+    <div class="bg">
+      <div class="background">
+        <p>
+          SETEC-Confession
+        </p>
+      </div>
+      <div class="profile">
+        <img src="p12.jpg" alt="">
+        <form action="https://api.telegram.com" class="form" id="form-telegram">
+          <form><br><br>
+            <p>
+              Seev the best posts from
+              <br><br>
+              និស្សិតសុីតិក - SETEC
+            </p>
+            <br><br>
+            <input type="text" required name="Caption_Confession" placeholder="Submit Here..">
+            <br><br>
+            <button type="submit" class="login"  onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+              <h2>Thank You!</h2>
+              <p>
+                Your details has been successfully submitted. Thank!
+              </p>
+              <button type="button" onclick="closePopup()">
+                OK
+              </button>
+            </div>
+          </form>
+        </form>
+      </div>
+      <br><br><br><br><br>
+      <div class="background">
+        <i class="fa-brands fa-facebook" style="color: rgb(19, 19, 255); font-size: 25px;"> <a href="https://web.facebook.com/profile.php?id=61567040285540" style="font-family: AKbalthom; color: white;" > និស្សិតសុីតិក - SETEC</a> </i>
+      </div>
+    </div>
+  </center>
+
+
+  <script type="module" src="scrips.js">
+
+    let popup = document.getElementById("popup")
+
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup.classList.remove("open-popup");
+    }
+  </script>
+      
+      
+  
+
+</body>
+</html>
